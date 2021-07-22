@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, StatusBar } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import { styles } from './styles';
 
 // Importando componente botão
@@ -10,12 +10,6 @@ import illustrationImg from '../../assets/illustration.png';
 export function SignIn() {
     return(
         <View style={styles.container}>
-            {/* Estilizando a barra de notificações */}
-            <StatusBar 
-                barStyle="light-content"
-                backgroundColor="transparent"
-                translucent
-            />
 
             <Image 
                 source={illustrationImg}

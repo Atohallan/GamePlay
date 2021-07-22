@@ -1,9 +1,9 @@
-import React from "react";
-import { View, Text, Image, StatusBar } from "react-native";
-import { styles } from "./styles";
+import React from 'react';
+import { View, Text, Image, StatusBar } from 'react-native';
+import { styles } from './styles';
 
 // Importando componente botão
-import { ButtonIcon } from "../../components/ButtonIcon";
+import { ButtonIcon } from '../../components/ButtonIcon';
 // Importando imagem
 import illustrationImg from '../../assets/illustration.png';
 
@@ -15,22 +15,23 @@ export function SignIn() {
                 barStyle="light-content"
                 backgroundColor="transparent"
                 translucent
-             />
+            />
 
-           <Image 
-            source={illustrationImg}
-            style={styles.image}
-            resizeMode="stretch"
-           />
+            <Image 
+                source={illustrationImg}
+                style={styles.image}
+                resizeMode="stretch"
+            />
+
             <View style={styles.content}> 
                 <Text style={styles.title}>
-                    Organize {`\n`}
-                    suas jogatinas {`\n`}
-                    facilmente
+                    Conecte-se {'\n'}
+                    e organize suas {'\n'}
+                    jogatinas
                 </Text>
 
                 <Text style={styles.subtitle}>
-                    Crie grupos para jogar seus games {`\n`}
+                    Crie grupos para jogar seus games {'\n'}
                     favoritos com seus amigos
                 </Text>
 
@@ -40,7 +41,6 @@ export function SignIn() {
                 />
 
             </View>
-
         </View>
     );
 }
